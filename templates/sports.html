@@ -1,0 +1,62 @@
+{%extends 'base.html'%}
+{% block header %}
+Search by Sports and salary
+{% endblock %}
+
+{% block script %}
+<script src="/static/sports.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<div>
+    <input type="radio" name="search" value="sports" checked="checked">
+    <label for="sports">Sports</label>
+    <input type="radio" name="search" value="salary">
+    <label for="salary">Salary</label><br>
+
+    <div class="search" id="sports">
+        <form action="" method="POST" name="sports" id="sports_form">
+
+            <label for="sport">Sports</label>
+            <select name="sport" id="sport">
+                <option value="" disabled></option>
+                <option value="Badminton" selected>Badminton</option>
+                <option value="Carrom">Carrom</option>
+                <option value="Cricket">Cricket</option>
+                <option value="TT">TT</option>
+            </select>
+
+            <label for="year">Year</label>
+            <select name="year" id="year">
+                <option value="" disabled></option>
+                <option value="2016" selected>2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+            </select>
+
+        </form>
+        <input type="submit" value="show results" id="sports_data">
+        <input type="button" value="saved query" id="saved_query_sports">
+        <div class="details_table" id="details_table">
+
+        </div>
+    </div>
+
+    <div class="search" id="salary" style="display: none;">
+        <form method="POST" name="salary" id="salary_form">
+
+            <label for="salary_low">Salary Low</label>
+            <input type="number" name="salary_low" id="salary_low" required>
+            <label for="salary_high">Salary High</label>
+            <input type="number" name="salary_high" id="salary_high">
+
+        </form>
+        <input type="button" value="show results" id="salary_data">
+        <input type="button" value="saved query" id="saved_query_salary">
+        <div class="details_table_sal" id="details_table_sal"></div>
+    </div>
+
+</div>
+{% endblock %}

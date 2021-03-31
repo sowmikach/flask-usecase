@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{% block header %}
+Saved Query
+{% endblock %}
+{% block script %}
+<script src="/static/savedQuery.js"></script>
+{% endblock %}
+
+{% block content %}
+<div id="saved_query_table"></div>
+<p>Total Queries Count: <span id="count"></span></p>
+{% endblock %}

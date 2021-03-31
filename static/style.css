@@ -1,0 +1,125 @@
+html {
+    font-family: sans-serif;
+    background: #eee;
+    padding: 1rem;
+  }
+  
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+    background: white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: serif;
+    color: #377ba8;
+    margin: 1rem 0;
+  }
+  
+  a {
+    color: #377ba8;
+    text-decoration: none;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid lightgray;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+  th{
+    color: #377ba8;
+  }
+  
+  nav {
+    background: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+  
+  nav ul  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a, nav ul li span, header .action {
+    display: block;
+    padding: 0.5rem;
+  }
+
+  .content {
+    padding: 0 1rem 1rem;
+  }
+
+  .content>header {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    color: #377ba8;
+    align-items: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+
+  }
+
+
+  .flash {
+    margin: 1em 0;
+    padding: 1em;
+    background: #cae6f6;
+    border: 1px solid #377ba8;
+  }
+
+  .content form {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+
+  .content input {
+    margin-bottom: 1em;
+    padding: 5px;
+  }
+
+  .content select {
+    padding: 5px;
+    margin-bottom: 1em;
+  }
+
+
+  input[type=submit] {
+    align-self: start;
+    min-width: 10em;
+    padding: 5px;
+    color: #377ba8;
+    font-size: medium;
+    cursor:pointer;
+  }
+
+  input[type=button],button{
+    align-self: start;
+    min-width: 10em;
+    padding: 5px;
+    color: #377ba8;
+    font-size: medium;
+    cursor:pointer;
+  }
+
+  .content p {
+    font-size: 1.1em;
+    font-weight: bold;
+  }

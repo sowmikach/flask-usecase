@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+
+{% block header %}
+Food Expenses
+{% endblock %}
+
+{% block script %}
+<script src="/static/expenses.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<form action="/getexpenses" method ="POST" class="expense_form" name="expense_form">
+    <label for="month">Month</label>
+    <select name="month" id="month">
+        <option value="" disabled ></option>
+        <option value="01" selected >01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+    </select>
+    <label for="year">Year</label>
+    <select name="year" id="year">
+        <option value="" disabled ></option>
+        <option value="2018" selected>2018</option>
+        <option value="2019">2019</option>
+    </select>
+    
+</form>
+<input type="submit" value="show results" id="exp">
+<button id="saved_query">saved query</button>
+<p>Total Amount: <span id="amount"></span></p>
+{% endblock %}
